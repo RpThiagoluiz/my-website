@@ -5,26 +5,25 @@ module.exports = {
     jest: true,
     node: true,
   },
-  extends: [
-    'eslint:recommended',
-    'plugin:react/recommended',
-    'plugin:react-hooks/recommended',
-    'plugin:prettier/recommended',
-    'plugin:storybook/recommended',
-  ],
   globals: {
     Atomics: 'readonly',
     SharedArrayBuffer: 'readonly',
   },
-  parser: '@babel/eslint-parser',
+  extends: [
+    'eslint:recommended',
+    'plugin:react/recommended',
+    'plugin:prettier/recommended',
+    'plugin:react-hooks/recommended',
+    'plugin:storybook/recommended',
+    'plugin:@typescript-eslint/recommended',
+  ],
+  overrides: [],
+  parser: '@typescript-eslint/parser',
   parserOptions: {
-    ecmaFeatures: {
-      jsx: true,
-    },
     ecmaVersion: 'latest',
     sourceType: 'module',
   },
-  plugins: ['react', 'prettier', 'react-hooks'],
+  plugins: ['react', 'prettier', 'react-hooks', '@typescript-eslint'],
   settings: {
     react: {
       version: 'detect',
@@ -34,3 +33,15 @@ module.exports = {
     'react/react-in-jsx-scope': 'off',
   },
 };
+
+// module.exports = {
+
+//   parserOptions: {
+//     ecmaFeatures: {
+//       jsx: true,
+//     },
+
+//   },
+//   plugins: ['react', 'prettier', 'react-hooks'],
+
+// };

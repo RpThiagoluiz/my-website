@@ -1,13 +1,12 @@
-import { HomePage } from "./modules/Home"
-import { ThemeProvider } from "./provider/ThemeProvider"
-
+import { HomePage } from './modules/Home';
+import { ThemeProvider } from './provider/ThemeProvider';
 
 function App() {
   return (
     <ThemeProvider>
-    <HomePage /></ThemeProvider>
-
-  )
+      <HomePage />
+    </ThemeProvider>
+  );
 }
 
-export default App
+export default App;

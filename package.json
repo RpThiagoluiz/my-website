@@ -4,9 +4,13 @@
   "version": "0.0.0",
   "scripts": {
     "dev": "vite",
+    "test": "jest",
     "build": "tsc && vite build",
     "preview": "vite preview",
-    "test": "jest"
+    "lint:check": "eslint src --ext js,ts,tsx",
+    "lint:format": "eslint src --ext js,ts,tsx && prettier --write .",
+    "prettier:check": "prettier --check .",
+    "prettier:format": "prettier --write ."
   },
   "dependencies": {
     "react": "^18.2.0",
@@ -25,6 +29,8 @@
     "@types/react": "^18.0.27",
     "@types/react-dom": "^18.0.10",
     "@types/styled-components": "^5.1.26",
+    "@typescript-eslint/eslint-plugin": "^5.54.1",
+    "@typescript-eslint/parser": "^5.54.1",
     "@vitejs/plugin-react": "^3.1.0",
     "babel-jest": "^29.5.0",
     "babel-loader": "^9.1.2",
