@@ -8,6 +8,23 @@ export const GlobalStyle = createGlobalStyle`
     padding:0;
     box-sizing: 'border-box';
     font-family: 'Roboto', sans-serif;
+
+  background-color: ${({ theme }) => theme.COLORS.BACKGROUND_PRIMARY};
+
+  &::-webkit-scrollbar {
+    width: 2px;
+  }
+
+  &::-webkit-scrollbar-track {
+    box-shadow: ${({ theme }) =>
+      `inset 0 0 5px${theme.COLORS.BACKGROUND_PRIMARY}`};
+    border-radius: 5px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: ${({ theme }) => theme.COLORS.HIGHLIGHT_PINK};
+    border-radius: 5px;
+  }
   }
 
 `;

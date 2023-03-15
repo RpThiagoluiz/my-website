@@ -1,5 +1,10 @@
+import { ContainerPage } from '../../layout/Containers/Page/ContainerPage';
 import * as Styles from './styles';
 
 export const HomePage = () => {
-  return <Styles.Wrapper>HomePage</Styles.Wrapper>;
+  return (
+    <ContainerPage>
+      <Styles.Wrapper>HomePage</Styles.Wrapper>
+    </ContainerPage>
+  );
 };

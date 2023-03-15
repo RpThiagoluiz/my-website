@@ -1,13 +1,10 @@
 export type themeType = {
   COLORS: {
-    PRIMARY: string;
-    SECONDARY: string;
+    BACKGROUND_PRIMARY: string;
+    BACKGROUND_SECONDARY: string;
+
+    FONT_PRIMARY: string;
+    HIGHLIGHT_CIANO: string;
+    HIGHLIGHT_PINK: string;
   };
 };
-
-// FONTS: {
-//   REGULAR: string;
-//   SEMIBOLD: string;
-//   BOLD: string;
-//   EXTRABOLD: string;
-// };
