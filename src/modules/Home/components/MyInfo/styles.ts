@@ -1,9 +1,17 @@
 import styled from 'styled-components';
 import { blink } from '../../../../layout/Animations/blink';
 import { bounce } from '../../../../layout/Animations/bounce';
+import { CloudArrowDown, LinkedinLogo, GithubLogo } from 'phosphor-react';
+
+type WrapperFlexProps = {
+  flexDirection?: React.CSSProperties['flexDirection'];
+  alignItems?: React.CSSProperties['alignItems'];
+  gap?: number;
+};
 
 export const Wrapper = styled.div`
-  margin: 50px 0 ;
+ padding: 50px;
+  background-color: ${({ theme }) => theme.COLORS.BACKGROUND_PRIMARY};
 `;
 
 export const WrapperDescriptionAndImage = styled.div`
@@ -13,11 +21,12 @@ gap: 30rem;
 
 `;
 
-export const WrapperFlexCenter = styled.div`
+export const WrapperFlex = styled.div<WrapperFlexProps>`
   display: flex;
-  align-items: center;
+  flex-direction: ${({ flexDirection }) => flexDirection ?? 'row'};
+  align-items: ${({ alignItems }) => alignItems ?? 'flex-start'};
   margin: 15px 0;
-  gap: 5px;
+  gap: ${({ gap }) => `${gap}px` ?? '5px'};
 
 `;
 
@@ -40,7 +49,7 @@ export const Square = styled.div`
   position: relative;
   transform: rotate(45deg);
   animation: ${bounce} 2s ease-in-out infinite;
-  background: ${({ theme }) => theme.COLORS.HIGHLIGHT_CIANO};
+  background: ${({ theme }) => theme.COLORS.HIGHLIGHT.CIANO};
   border-radius: 14px;
 
 `;
@@ -49,5 +58,43 @@ export const Image = styled.img`
   width: 20rem;
   background-color: transparent;
   filter: ${({ theme }) =>
-    `drop-shadow(0 0.75rem 0.75rem ${theme.COLORS.HIGHLIGHT_CIANO})`};
+    `drop-shadow(0 0.75rem 0.75rem ${theme.COLORS.HIGHLIGHT.CIANO})`};
+`;
+
+export const GithubIcon = styled(GithubLogo).attrs({
+  size: 32,
+})`
+  background-color: transparent;
+  filter: ${({ theme }) =>
+    `drop-shadow(0 0 0.3rem ${theme.COLORS.HIGHLIGHT.PINK})`};
+    transition: all 500ms ease-in-out;
+
+    &:hover{
+      filter: ${({ theme }) =>
+        `drop-shadow(0 0.4rem 0.9rem ${theme.COLORS.HIGHLIGHT.PINK})`};
+    }
+`;
+
+export const LinkedInIcon = styled(LinkedinLogo).attrs({
+  size: 32,
+})`
+ background-color: transparent;
+  filter: ${({ theme }) =>
+    `drop-shadow(0 0 0.3rem ${theme.COLORS.HIGHLIGHT.PINK})`};
+    transition: all 500ms ease-in-out;
+
+    &:hover{
+      filter: ${({ theme }) =>
+        `drop-shadow(0 0.4rem 0.9rem ${theme.COLORS.HIGHLIGHT.PINK})`};
+    }
+`;
+
+export const DownloadIcon = styled(CloudArrowDown).attrs({
+  size: 32,
+})`
+  background-color: transparent;
+
+  filter: ${({ theme }) =>
+    `drop-shadow(0 0 0.3rem ${theme.COLORS.INFO.SUCCESS})`};
+
 `;

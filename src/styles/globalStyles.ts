@@ -4,12 +4,12 @@ export const GlobalStyle = createGlobalStyle`
  @import url('https://fonts.googleapis.com/css2?family=Sono:wght@400;500;700&display=swap');
 
   * {
-  margin: 0;
+    margin: 0;
     padding:0;
     box-sizing: 'border-box';
     font-family: 'Sono', sans-serif;
 
-  background-color: ${({ theme }) => theme.COLORS.BACKGROUND_PRIMARY};
+
 
   &::-webkit-scrollbar {
     width: 2px;
@@ -22,9 +22,13 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   &::-webkit-scrollbar-thumb {
-    background-color: ${({ theme }) => theme.COLORS.HIGHLIGHT_PINK};
+    background-color: ${({ theme }) => theme.COLORS.HIGHLIGHT.PINK};
     border-radius: 5px;
   }
   }
+
+  a {
+    all: unset;
+}
 
 `;
