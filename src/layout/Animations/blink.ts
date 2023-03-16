@@ -1,0 +1,19 @@
+import { keyframes } from 'styled-components';
+
+export const blink = keyframes`
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 0;
+  }
+`;

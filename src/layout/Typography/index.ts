@@ -11,5 +11,5 @@ export const Typography = styled.p<TypographyProps>`
 `;
 
 export const TypographyHighLight = styled(Typography)`
-  color: ${({ theme }) => theme.COLORS.HIGHLIGHT_PINK};
+  color: ${({ theme }) => theme.COLORS.HIGHLIGHT_CIANO};
 `;
