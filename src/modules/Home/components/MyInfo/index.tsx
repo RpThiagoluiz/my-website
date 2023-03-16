@@ -19,14 +19,22 @@ export const MyInfo = () => {
         <div>
           <Typography fontSize={20}>HI THERE! I&apos;M </Typography>
           <Styles.WrapperFlex alignItems='center'>
-            <TypographyHighLight fontSize={40} highLightColor='CIANO'>
-              Thiago{' '}
+            <TypographyHighLight
+              fontSize={40}
+              highLightColor='CIANO'
+              marginRight={10}
+            >
+              Thiago
             </TypographyHighLight>
             <Typography fontSize={30}> Luiz Gonçalves</Typography>
           </Styles.WrapperFlex>
           <Styles.WrapperFlex alignItems='center'>
             <Typography fontSize={25}>A Front-End</Typography>
-            <TypographyHighLight fontSize={25} highLightColor='CIANO'>
+            <TypographyHighLight
+              fontSize={25}
+              highLightColor='CIANO'
+              marginLeft={10}
+            >
               {typedWord}
             </TypographyHighLight>
             <Styles.Typing />
