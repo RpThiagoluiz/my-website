@@ -1,6 +1,7 @@
 import { ContainerPage } from '../../layout/Containers/Page/ContainerPage';
-import { Experiences } from './components/Experiences';
+import { AboutMe } from './components/AboutMe';
 import { MyInfo } from './components/MyInfo';
+import { Projects } from './components/Projects';
 import * as Styles from './styles';
 
 export const HomePage = () => {
@@ -8,7 +9,8 @@ export const HomePage = () => {
     <ContainerPage>
       <Styles.Wrapper>Portfolio. </Styles.Wrapper>
       <MyInfo />
-      <Experiences />
+      <AboutMe />
+      <Projects />
     </ContainerPage>
   );
 };

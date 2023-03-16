@@ -6,6 +6,8 @@ type TypographyProps = {
   marginBottom?: number;
   marginRight?: number;
   marginLeft?: number;
+  color?: 'PRIMARY' | 'PRIMARY_REVERT';
+  bold?: boolean;
 };
 
 type TypographyHighLight = {
@@ -18,6 +20,9 @@ export const Typography = styled.p<TypographyProps>`
   margin-bottom: ${({ marginBottom }) => `${marginBottom}px` ?? `0`};
   margin-right: ${({ marginRight }) => `${marginRight}px` ?? `0`};
   margin-left: ${({ marginLeft }) => `${marginLeft}px` ?? `0`};
+  color: ${({ theme, color }) =>
+    color ? theme.COLORS.FONT[color] : 'inherit'} ;
+  font-weight: ${({ bold }) => (bold ? 'bold' : 'normal')} ;
 `;
 
 export const TypographyHighLight = styled(Typography)<TypographyHighLight>`

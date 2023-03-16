@@ -17,7 +17,7 @@ export const GlobalStyle = createGlobalStyle`
 
   &::-webkit-scrollbar-track {
     box-shadow: ${({ theme }) =>
-      `inset 0 0 5px${theme.COLORS.BACKGROUND_PRIMARY}`};
+      `inset 0 0 5px${theme.COLORS.BACKGROUND.PRIMARY}`};
     border-radius: 5px;
   }
 

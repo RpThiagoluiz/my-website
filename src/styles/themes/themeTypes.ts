@@ -1,3 +1,8 @@
+export type BackgroundColors = {
+  PRIMARY: string;
+  SECONDARY: string;
+};
+
 export type HighlightColors = {
   CIANO: string;
   PINK: string;
@@ -9,14 +14,17 @@ export type InfoColors = {
   SUCCESS: string;
 };
 
+export type FontColors = {
+  PRIMARY: string;
+  PRIMARY_REVERT: string;
+};
+
 export type themeType = {
   COLORS: {
-    BACKGROUND_PRIMARY: string;
-    BACKGROUND_SECONDARY: string;
+    BACKGROUND: BackgroundColors;
+
     WHITE: string;
-
-    FONT_PRIMARY: string;
-
+    FONT: FontColors;
     HIGHLIGHT: HighlightColors;
     INFO: InfoColors;
   };

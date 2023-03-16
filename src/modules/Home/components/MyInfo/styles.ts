@@ -3,30 +3,22 @@ import { blink } from '../../../../layout/Animations/blink';
 import { bounce } from '../../../../layout/Animations/bounce';
 import { CloudArrowDown, LinkedinLogo, GithubLogo } from 'phosphor-react';
 
-type WrapperFlexProps = {
-  flexDirection?: React.CSSProperties['flexDirection'];
-  alignItems?: React.CSSProperties['alignItems'];
-  gap?: number;
-};
+export const Container = styled.div`
+  background-color: ${({ theme }) => theme.COLORS.HIGHLIGHT.CIANO};
+`;
 
 export const Wrapper = styled.div`
- padding: 50px;
-  background-color: ${({ theme }) => theme.COLORS.BACKGROUND_PRIMARY};
+  padding: 50px;
+  background-color: ${({ theme }) => theme.COLORS.BACKGROUND.PRIMARY};
+  height: 70vh;
+  border-radius: 0px 0px 250px 0px;
 `;
 
 export const WrapperDescriptionAndImage = styled.div`
 display: grid;
 grid-template-columns: 1fr 1fr;
 gap: 30rem;
-
-`;
-
-export const WrapperFlex = styled.div<WrapperFlexProps>`
-  display: flex;
-  flex-direction: ${({ flexDirection }) => flexDirection ?? 'row'};
-  align-items: ${({ alignItems }) => alignItems ?? 'flex-start'};
-  margin: 15px 0;
-  gap: ${({ gap }) => `${gap}px` ?? '5px'};
+margin-bottom: 150px;
 
 `;
 
@@ -38,7 +30,7 @@ justify-content: center;
 `;
 
 export const Typing = styled.div`
-  border-left: ${({ theme }) => `2px solid ${theme.COLORS.FONT_PRIMARY}`};
+  border-left: ${({ theme }) => `2px solid ${theme.COLORS.FONT.PRIMARY}`};
   height: 30px;
   animation: ${blink} 1s infinite;
 `;
@@ -55,7 +47,7 @@ export const Square = styled.div`
 `;
 
 export const Image = styled.img`
-  width: 20rem;
+  width: 24rem;
   background-color: transparent;
   filter: ${({ theme }) =>
     `drop-shadow(0 0.75rem 0.75rem ${theme.COLORS.HIGHLIGHT.CIANO})`};
