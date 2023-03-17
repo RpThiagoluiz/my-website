@@ -1,14 +1,11 @@
 {
   "name": "my-site",
-  "homepage": "https://rpthiagoluiz.github.io/my-website/",
   "private": true,
   "version": "0.0.0",
   "scripts": {
     "dev": "vite",
     "test": "jest",
     "build": "tsc && vite build",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist",
     "preview": "vite preview",
     "lint:check": "eslint src --ext js,ts,tsx",
     "lint:format": "eslint src --ext js,ts,tsx --fix && prettier --write .",

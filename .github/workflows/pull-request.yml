@@ -28,7 +28,3 @@ jobs:
         run: npm run prettier:format
       - name: Lint
         run: npm run lint:format
-      - name: Pre Deploy
-        run: npm run build
-      - name: Deploy
-        run: npm run deploy
