@@ -59,7 +59,7 @@ Error generating stack: `+l.message+`
   min-height: calc(100vh);
   color: ${({theme:e})=>e.COLORS.FONT.PRIMARY};
   background-color: ${({theme:e})=>e.COLORS.HIGHLIGHT.CIANO};
-`,Ua=80,Z1=150,J1=2e3,q1=50,b1=500,eh=()=>Math.floor(Math.random()*(Z1-Ua+1))+Ua,th=e=>{const[t,n]=re.useState(0),[r,o]=re.useState(0),[l,i]=re.useState("");return re.useEffect(()=>{const s={[0]:()=>{const c=e[t].slice(0,l.length+1);if(c===l){o(1);return}const h=setTimeout(()=>{i(c)},eh());return()=>clearTimeout(h)},[2]:()=>{if(!l){const m=setTimeout(()=>{const p=t+1;n(e[p]?p:0),o(0)},b1);return()=>clearTimeout(m)}const c=e[t].slice(0,l.length-1),h=setTimeout(()=>{i(c)},q1);return()=>clearTimeout(h)},[1]:()=>{const c=setTimeout(()=>{o(2)},J1);return()=>clearTimeout(c)}}[r];return s()},[e,l,t,r]),{typedWord:l}},nh="/assets/avatar-1cfb4345.png",wn=me.p`
+`,Ua=80,Z1=150,J1=2e3,q1=50,b1=500,eh=()=>Math.floor(Math.random()*(Z1-Ua+1))+Ua,th=e=>{const[t,n]=re.useState(0),[r,o]=re.useState(0),[l,i]=re.useState("");return re.useEffect(()=>{const s={[0]:()=>{const c=e[t].slice(0,l.length+1);if(c===l){o(1);return}const h=setTimeout(()=>{i(c)},eh());return()=>clearTimeout(h)},[2]:()=>{if(!l){const m=setTimeout(()=>{const p=t+1;n(e[p]?p:0),o(0)},b1);return()=>clearTimeout(m)}const c=e[t].slice(0,l.length-1),h=setTimeout(()=>{i(c)},q1);return()=>clearTimeout(h)},[1]:()=>{const c=setTimeout(()=>{o(2)},J1);return()=>clearTimeout(c)}}[r];return s()},[e,l,t,r]),{typedWord:l}},nh="/my-website/assets/avatar-1cfb4345.png",wn=me.p`
   font-size: ${({fontSize:e})=>`${e}px`??"16px"};
   margin-top: ${({marginTop:e})=>`${e}px`??"0"};
   margin-bottom: ${({marginBottom:e})=>`${e}px`??"0"};
