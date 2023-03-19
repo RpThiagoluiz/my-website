@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-height: 30vh;
+height: 30svh;
 background: ${({ theme }) => theme.COLORS.BACKGROUND.PRIMARY};
 padding: 80px 50px 50px ;
 display: flex;
