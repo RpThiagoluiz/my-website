@@ -52,9 +52,9 @@ export const MyInfo = () => {
             </Typography>
           </div>
 
-          <Styles.Square>
+          <Styles.GeometricWrapper>
             <Styles.Image src={avatar} alt='Image of me, using a suit' />
-          </Styles.Square>
+          </Styles.GeometricWrapper>
         </Styles.WrapperDescriptionAndImage>
         <TypographyHighLight
           fontSize={25}

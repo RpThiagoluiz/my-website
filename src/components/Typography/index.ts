@@ -15,7 +15,7 @@ type TypographyHighLight = {
 };
 
 export const Typography = styled.p<TypographyProps>`
-  font-size: ${({ fontSize }) => `${fontSize}px` ?? `16px`};
+  font-size:${({ fontSize }) => `${fontSize}px` ?? `16px`};
   margin-top: ${({ marginTop }) => `${marginTop}px` ?? `0`};
   margin-bottom: ${({ marginBottom }) => `${marginBottom}px` ?? `0`};
   margin-right: ${({ marginRight }) => `${marginRight}px` ?? `0`};
@@ -23,6 +23,7 @@ export const Typography = styled.p<TypographyProps>`
   color: ${({ theme, color }) =>
     color ? theme.COLORS.FONT[color] : 'inherit'} ;
   font-weight: ${({ bold }) => (bold ? 'bold' : 'normal')} ;
+
 `;
 
 export const TypographyHighLight = styled(Typography)<TypographyHighLight>`

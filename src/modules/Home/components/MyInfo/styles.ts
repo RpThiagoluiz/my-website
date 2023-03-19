@@ -10,15 +10,23 @@ export const Container = styled.div`
 export const Wrapper = styled.div`
   padding: 50px;
   background-color: ${({ theme }) => theme.COLORS.BACKGROUND.PRIMARY};
-  height: 70vh;
+  min-height: 70svh;
   border-radius: 0px 0px 250px 0px;
 `;
 
 export const WrapperDescriptionAndImage = styled.div`
 display: grid;
 grid-template-columns: 1fr 1fr;
-gap: 30rem;
+gap: clamp(2rem, 1rem + 20vw, 30rem);
 margin-bottom: 150px;
+
+
+@media (max-width: 1024px) {
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 1rem;
+
+}
 
 `;
 
@@ -35,22 +43,30 @@ export const Typing = styled.div`
   animation: ${blink} 1s infinite;
 `;
 
-export const Square = styled.div`
-  width: 12rem;
-  height: 20rem;
+export const GeometricWrapper = styled.div`
+  width: 320px;
+  height: 300px;
+  border-radius: 20rem 30rem  25rem 3rem;
   position: relative;
-  transform: rotate(45deg);
-  animation: ${bounce} 2s ease-in-out infinite;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow-y: hidden;
   background: ${({ theme }) => theme.COLORS.HIGHLIGHT.CIANO};
-  border-radius: 14px;
+  animation: ${bounce} 2s ease-in-out infinite;
+
 
 `;
 
 export const Image = styled.img`
-  width: 24rem;
+  width: 320px;
   background-color: transparent;
   filter: ${({ theme }) =>
     `drop-shadow(0 0.75rem 0.75rem ${theme.COLORS.HIGHLIGHT.CIANO})`};
+
+  position: absolute;
+  top: 0px;
+
 `;
 
 export const GithubIcon = styled(GithubLogo).attrs({

@@ -8,6 +8,7 @@ type WrapperFlexProps = {
 
 export const WrapperFlex = styled.div<WrapperFlexProps>`
   display: flex;
+  flex-wrap: wrap;
   flex-direction: ${({ flexDirection }) => flexDirection ?? 'row'};
   align-items: ${({ alignItems }) => alignItems ?? 'flex-start'};
   margin: 15px 0;
