@@ -10,11 +10,13 @@ type TypographyProps = {
   bold?: boolean;
 };
 
-type TypographyHighLight = {
+type TypographyHighLightProps = Omit<TypographyProps, 'color'> & {
   highLightColor: 'CIANO' | 'PINK';
 };
 
-export const Typography = styled.p<TypographyProps>`
+export const Typography = styled.p.attrs({
+  role: 'typography', // pass role for jest
+})<TypographyProps>`
   font-size:${({ fontSize }) => `${fontSize}px` ?? `16px`};
   margin-top: ${({ marginTop }) => `${marginTop}px` ?? `0`};
   margin-bottom: ${({ marginBottom }) => `${marginBottom}px` ?? `0`};
@@ -26,7 +28,9 @@ export const Typography = styled.p<TypographyProps>`
 
 `;
 
-export const TypographyHighLight = styled(Typography)<TypographyHighLight>`
+export const TypographyHighLight = styled(Typography).attrs({
+  'data-testid': 'typographyHighLight', // pass id for jest
+})<TypographyHighLightProps>`
   color: ${({ theme, highLightColor }) =>
     theme.COLORS.HIGHLIGHT[highLightColor]} ;
 `;
