@@ -5,7 +5,9 @@ export const TooltipContainer = styled.div`
   cursor: pointer;
 `;
 
-export const TooltipBox = styled.div`
+export const TooltipBox = styled.div.attrs({
+  'data-testid': 'tooltipBox',
+})`
   position: absolute;
   top: calc(100% + 10px);
   left: -50px;
