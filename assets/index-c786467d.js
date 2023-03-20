@@ -61,7 +61,7 @@ Error generating stack: `+l.message+`
  overflow-x: hidden;
   color: ${({theme:e})=>e.COLORS.FONT.PRIMARY};
   background-color: ${({theme:e})=>e.COLORS.HIGHLIGHT.CIANO};
-`,Ua=80,Z1=150,J1=2e3,q1=50,b1=500,eh=()=>Math.floor(Math.random()*(Z1-Ua+1))+Ua,th=e=>{const[t,n]=re.useState(0),[r,o]=re.useState(0),[l,i]=re.useState("");return re.useEffect(()=>{const s={[0]:()=>{const c=e[t].slice(0,l.length+1);if(c===l){o(1);return}const h=setTimeout(()=>{i(c)},eh());return()=>clearTimeout(h)},[2]:()=>{if(!l){const m=setTimeout(()=>{const p=t+1;n(e[p]?p:0),o(0)},b1);return()=>clearTimeout(m)}const c=e[t].slice(0,l.length-1),h=setTimeout(()=>{i(c)},q1);return()=>clearTimeout(h)},[1]:()=>{const c=setTimeout(()=>{o(2)},J1);return()=>clearTimeout(c)}}[r];return s()},[e,l,t,r]),{typedWord:l}},nh="/my-website/assets/avatar-1cfb4345.png",wn=me.p`
+`,Ua=80,Z1=150,J1=2e3,q1=50,b1=500,eh=()=>Math.floor(Math.random()*(Z1-Ua+1))+Ua,th=e=>{const[t,n]=re.useState(0),[r,o]=re.useState(0),[l,i]=re.useState("");return re.useEffect(()=>{const s={[0]:()=>{const c=e[t].slice(0,l.length+1);if(c===l){o(1);return}const h=setTimeout(()=>{i(c)},eh());return()=>clearTimeout(h)},[2]:()=>{if(!l){const m=setTimeout(()=>{const p=t+1;n(e[p]?p:0),o(0)},b1);return()=>clearTimeout(m)}const c=e[t].slice(0,l.length-1),h=setTimeout(()=>{i(c)},q1);return()=>clearTimeout(h)},[1]:()=>{const c=setTimeout(()=>{o(2)},J1);return()=>clearTimeout(c)}}[r];return s()},[e,l,t,r]),{typedWord:l}},nh="/my-website/assets/avatar-1cfb4345.png",wn=me.p.attrs({role:"typography"})`
   font-size:${({fontSize:e})=>`${e}px`??"16px"};
   margin-top: ${({marginTop:e})=>`${e}px`??"0"};
   margin-bottom: ${({marginBottom:e})=>`${e}px`??"0"};
@@ -70,7 +70,7 @@ Error generating stack: `+l.message+`
   color: ${({theme:e,color:t})=>t?e.COLORS.FONT[t]:"inherit"} ;
   font-weight: ${({bold:e})=>e?"bold":"normal"} ;
 
-`,po=me(wn)`
+`,po=me(wn).attrs({"data-testid":"typographyHighLight"})`
   color: ${({theme:e,highLightColor:t})=>e.COLORS.HIGHLIGHT[t]} ;
 `,pi=me.div`
   display: flex;
@@ -79,13 +79,13 @@ Error generating stack: `+l.message+`
   align-items: ${({alignItems:e})=>e??"flex-start"};
   margin: 15px 0;
   gap: ${({gap:e})=>`${e}px`??"5px"};
-`,rh=me.hr.attrs({size:1})`
+`,rh=me.hr.attrs({size:1,"data-testid":"horizontalDivider"})`
   width: ${({widthPercentage:e})=>`${e}%`??"100%"};
   margin: 15px 0;
 `,md=me.div`
 
   cursor: pointer;
-`,vd=me.div`
+`,vd=me.div.attrs({"data-testid":"tooltipBox"})`
   position: absolute;
   top: calc(100% + 10px);
   left: -50px;
@@ -223,7 +223,6 @@ justify-content: center;
 background: ${({theme:e})=>e.COLORS.BACKGROUND.PRIMARY};
 padding: 50px;
 `,Ph=()=>St(X1,{children:[G(_h,{children:"Portfolio. "}),G(Lh,{})]}),Nh=K1`
- @import url('https://fonts.googleapis.com/css2?family=Sono:wght@400;500;700&display=swap');
 
   * {
     margin: 0;
