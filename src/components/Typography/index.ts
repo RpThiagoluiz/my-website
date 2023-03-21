@@ -6,7 +6,7 @@ type TypographyProps = {
   marginBottom?: number;
   marginRight?: number;
   marginLeft?: number;
-  color?: 'PRIMARY' | 'PRIMARY_REVERT';
+  color?: 'PRIMARY' | 'PRIMARY_REVERT' | 'BLACK';
   bold?: boolean;
 };
 

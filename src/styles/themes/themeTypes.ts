@@ -1,6 +1,8 @@
 export type BackgroundColors = {
   PRIMARY: string;
   SECONDARY: string;
+  WHITE: string;
+  BLACK: string;
 };
 
 export type HighlightColors = {
@@ -17,6 +19,7 @@ export type InfoColors = {
 export type FontColors = {
   PRIMARY: string;
   PRIMARY_REVERT: string;
+  BLACK: string;
 };
 
 export type themeType = {

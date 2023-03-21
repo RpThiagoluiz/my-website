@@ -5,5 +5,5 @@ export const ContainerPage = styled.div`
 
  overflow-x: hidden;
   color: ${({ theme }) => theme.COLORS.FONT.PRIMARY};
-  background-color: ${({ theme }) => theme.COLORS.HIGHLIGHT.CIANO};
+  background-color: inherit;
 `;

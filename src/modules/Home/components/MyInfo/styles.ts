@@ -4,7 +4,7 @@ import { bounce } from '../../../../layout/Animations/bounce';
 import { CloudArrowDown, LinkedinLogo, GithubLogo } from 'phosphor-react';
 
 export const Container = styled.div`
-  background-color: ${({ theme }) => theme.COLORS.HIGHLIGHT.CIANO};
+  background-color: ${({ theme }) => theme.COLORS.BACKGROUND.WHITE};
 `;
 
 export const Wrapper = styled.div`

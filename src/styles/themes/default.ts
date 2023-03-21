@@ -5,11 +5,14 @@ export const defaultTheme: themeType = {
     BACKGROUND: {
       PRIMARY: '#222831',
       SECONDARY: '#393E46',
+      WHITE: '#F5F5F5',
+      BLACK: '#181818',
     },
     WHITE: '#FCFCFCFC',
     FONT: {
       PRIMARY: '#EEEEEE',
       PRIMARY_REVERT: '#393E46',
+      BLACK: '#181818',
     },
 
     HIGHLIGHT: {

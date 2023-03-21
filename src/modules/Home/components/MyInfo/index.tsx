@@ -6,7 +6,6 @@ import {
 } from '../../../../components/Typography';
 import { WrapperFlex } from '../../../../layout/Containers/Wrappers/WrapperFlex';
 import { HorizontalDivider } from '../../../../components/Divider/Horizontal';
-import { Tooltip } from '../../../../components/Tooltip';
 import * as Styles from './styles';
 
 const stacks = ['ReactJs', 'NextJs', 'React native', 'NodeJs'];
@@ -81,16 +80,15 @@ export const MyInfo = () => {
           >
             <Styles.LinkedInIcon />
           </a>
-          <Tooltip toolTipContainer='resume'>
-            <a
-              href='https://drive.google.com/file/d/18nLo_s96ezbSHlmaOFphiAK2h6uGfYpU/view'
-              target='_blank'
-              referrerPolicy='no-referrer'
-              rel='noreferrer'
-            >
-              <Styles.DownloadIcon />
-            </a>
-          </Tooltip>
+
+          <a
+            href='https://drive.google.com/file/d/18nLo_s96ezbSHlmaOFphiAK2h6uGfYpU/view'
+            target='_blank'
+            referrerPolicy='no-referrer'
+            rel='noreferrer'
+          >
+            <Styles.DownloadIcon />
+          </a>
         </WrapperFlex>
       </Styles.Wrapper>
     </Styles.Container>
