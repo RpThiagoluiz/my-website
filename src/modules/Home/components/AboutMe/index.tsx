@@ -17,7 +17,7 @@ export const AboutMe = () => {
             I&apos;m Fullstack developer who loves frontend.I live in Brazil, my
             passion is create intuitive and current applications that solve
             everyday problems. I study constantly to update myself and improve
-            my skills more and more. Sometimes i play video game to relax.
+            my skills more and more.
           </Typography>
         </Styles.TextBox>
       </WrapperFlex>
