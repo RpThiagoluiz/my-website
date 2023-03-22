@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import { blink } from '../../../../layout/Animations/blink';
-import { bounce } from '../../../../layout/Animations/bounce';
+
 import { CloudArrowDown, LinkedinLogo, GithubLogo } from 'phosphor-react';
 
 export const Container = styled.div`
@@ -53,7 +53,7 @@ export const GeometricWrapper = styled.div`
   justify-content: center;
   overflow-y: hidden;
   background: ${({ theme }) => theme.COLORS.HIGHLIGHT.CIANO};
-  animation: ${bounce} 2s ease-in-out infinite;
+
 
 
 `;

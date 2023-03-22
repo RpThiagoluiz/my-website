@@ -1,5 +1,6 @@
 import { Typography } from '../../../../components/Typography';
 import reactIcon from '../../../../assets/images/react-icons.svg';
+import rocketImage from '../../../../assets/images/rocket.svg';
 import { WrapperFlex } from '../../../../layout/Containers/Wrappers/WrapperFlex';
 import { WrapperIcon } from '../../../../layout/Containers/Wrappers/WrapperIcon';
 import * as Styles from './styles';
@@ -7,9 +8,8 @@ import * as Styles from './styles';
 export const AboutMe = () => {
   return (
     <Styles.Container>
-      <Styles.IconsWrapper>
-        <WrapperIcon src={reactIcon} size={40} />
-      </Styles.IconsWrapper>
+      <Styles.Image src={rocketImage} />
+
       <Styles.Title>About me</Styles.Title>
       <WrapperFlex alignItems='center' justifyContent='center'>
         <Styles.TextBox>
