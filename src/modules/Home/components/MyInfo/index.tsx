@@ -60,7 +60,7 @@ export const MyInfo = () => {
           marginBottom={25}
           highLightColor='PINK'
         >
-          Contacts
+          Follow
         </TypographyHighLight>
 
         <WrapperFlex gap={25}>
@@ -89,6 +89,20 @@ export const MyInfo = () => {
           >
             <Styles.DownloadIcon />
           </a>
+        </WrapperFlex>
+        <WrapperFlex flexDirection='column'>
+          <WrapperFlex marginBottom={5} marginTop={15}>
+            <TypographyHighLight highLightColor='PINK'>
+              Email:
+            </TypographyHighLight>{' '}
+            <Typography>dev.thiagoluiz@gmail.com</Typography>
+          </WrapperFlex>
+          <WrapperFlex>
+            <TypographyHighLight highLightColor='PINK'>
+              Phone:
+            </TypographyHighLight>{' '}
+            <Typography>+55(62)98146-7658</Typography>
+          </WrapperFlex>
         </WrapperFlex>
       </Styles.Wrapper>
     </Styles.Container>

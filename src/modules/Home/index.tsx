@@ -6,7 +6,7 @@ import * as Styles from './styles';
 export const HomePage = () => {
   return (
     <ContainerPage>
-      <Styles.Wrapper>Portfolio. </Styles.Wrapper>
+      {/* <Styles.Wrapper>Portfolio. </Styles.Wrapper> */}
       <MyInfo />
       <AboutMe />
     </ContainerPage>
